@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDirs": ["./src"],
+    "baseUrl": "./src",
+    "paths":{
+      "@db/*": ["./db/*"]
+    },
+    "esModuleInterop": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
