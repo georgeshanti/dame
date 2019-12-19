@@ -1,7 +1,7 @@
 import { BrowserWindow, app } from 'electron';
 import express from "express";
 
-import Connector from "@db/connectors/Connector";
+import  {Connector } from "@db/connectors/Connector";
 
 const isDev:boolean = require("electron-is-dev");
 
@@ -10,7 +10,7 @@ const isDev:boolean = require("electron-is-dev");
 
 const PORT:number = 8000;
 const uiURL:string = "http://localhost:3000/";
-export class Dame{
+class Dame{
 	dameApp: Electron.App;
 	mainWindow: Electron.BrowserWindow;
 	server: express.Application;
@@ -63,3 +63,5 @@ export class Dame{
 		});
 	}
 }
+
+export { Dame }

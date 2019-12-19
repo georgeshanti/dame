@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router';
 import styles from './App.module.scss';
 
+import { Sidebar } from 'components/Sidebar';
+import { ColorPalette } from 'components/ColorPalette';
+
 function App() {
-  return (
-    <div className={styles["App"]}>
-      <header className={styles["App-header"]}>
-        <img src={logo} className={styles["App-logo"]} alt={styles["logo"]} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className={styles["App-link"]}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className={styles["App"]}>
+			<Sidebar />
+			<Switch>
+				<Route path="/palette" exact component={ColorPalette} />
+			</Switch>
+		</div>
+	);
 }
 
 export default App;

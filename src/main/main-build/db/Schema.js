@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Table {
-    constructor(name, schema, connector) {
+class Schema {
+    constructor(name, connector) {
         this.name = name;
         this.connector = connector;
+        this.tables = [];
     }
-    getColumns() { return null; }
 }
-exports.Table = Table;
+exports.Schema = Schema;

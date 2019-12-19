@@ -1,0 +1,14 @@
+.Sidebar{
+    background: blue;
+    height: 100vh;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+
+    &.expanded{
+        width: 300px;
+    }
+
+    &.collapsed{
+        width: 50px;
+    }
+}

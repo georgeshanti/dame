@@ -1,0 +1,60 @@
+@import '~styles/colors.scss';
+
+.colorPalette{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.colorSection{
+    width: 900px;
+    height: 300px;
+    border-style: solid;
+    border-color: rgba(200,200,200,1);
+    border-width: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.color{
+    width: 11.111%;
+    height: 100%;
+    display: inline-block;
+    background: black;
+
+    &:nth-of-type(1){
+        background: $black-shadow;
+    }
+    
+    &:nth-of-type(2){
+        background: $black;
+    }
+    
+    &:nth-of-type(3){
+        background: $black-highlight;
+    }
+    
+    &:nth-of-type(4){
+        background: $blue-shadow;
+    }
+    
+    &:nth-of-type(5){
+        background: $blue;
+    }
+    
+    &:nth-of-type(6){
+        background: $blue-highlight;
+    }
+    
+    &:nth-of-type(7){
+        background: $white-shadow;
+    }
+    
+    &:nth-of-type(8){
+        background: $white;
+    }
+    
+    &:nth-of-type(9){
+        background: $white-highlight;
+    }
+}

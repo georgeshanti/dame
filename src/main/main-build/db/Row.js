@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Row = /** @class */ (function () {
-    function Row() {
+class Row {
+    constructor(row) {
+        for (let key in row) {
+            this[key] = row[key];
+        }
     }
-    return Row;
-}());
-exports.default = Row;
+}
+exports.Row = Row;
